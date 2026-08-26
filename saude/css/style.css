@@ -1,0 +1,69 @@
+html {
+  font-size: clamp(1rem, calc(0.5rem + 1vw), 1.625rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 3vw 0;
+}
+header nav ul li {
+  color: gray;
+  margin: 2vw 0 0 0;
+}
+section.banner{
+  padding: 0 3vw;
+}
+section.banner h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+section.banner h2 span {
+  color: #458FF6;
+}
+section.banner p {
+  color: #7D7987;
+  padding: 5vw 0 0 0;
+}
+section.banner p a {
+  color: white;
+  background-color: #458FF6;
+  border-radius: 30vw;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 600px) {
+ header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 10vw;
+ }
+ header nav ul  {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+ }
+ header a:hover {
+  color: black;
+ }
+ section.banner {
+  display: flex;
+  gap: 3vw;
+  padding: 2vw 10vw;
+ }
+ section.banner div {
+  padding: 8vw 0 0 0;
+ }
+ section.banner p {
+  padding: 1vw 0 0 0;
+ }
+ section.banner a {
+  margin: 3vw 0 0 0;
+ }
+ section.banner a:hover {
+  background-color: #a3c9ff;
+  color: #458FF6;
+ }
+}
+
