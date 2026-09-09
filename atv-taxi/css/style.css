@@ -1,3 +1,77 @@
 html {
-  font-size: clamp(1rem, calc(0.5rem + 2vw), 1.625rem);
+  font-size: clamp(1rem, calc(0.5rem + 2vw), 4rem);
+}
+
+header{
+  text-align: center;
+  padding: 5vw 0 0 0;
+}
+
+header nav ul li{
+  margin: 20px 0 0 0;
+}
+header nav ul li a.btn{
+  color: #FBBC05;
+}
+header nav ul li a.btn-border{
+  background-color: #FBBC05;
+  color:  white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  display: inline-block;
+}
+section.banner{
+  background: url(../img/background-banner.png) no-repeat;
+  background-size: 100% auto;
+  padding: 3vw 5vw;
+  margin: 5vw 0;
+}
+section.banner div.img {
+  display: none;
+}
+section.banner h2 {
+  font-size: 2rem;
+}
+section.banner p {
+  color: rgb(104, 104, 104);
+  font-size: 0.7rem;
+  margin: 14px 0 0 0;
+}
+section.banner p a {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+section.banner ul {
+  display: flex;
+  gap: 20px;
+}
+section.banner p.buttons img {
+  height: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  header {
+    padding: 2vw 5vw;
+  }
+  section.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.banner div.img {
+    display: block;
+  }
 }
