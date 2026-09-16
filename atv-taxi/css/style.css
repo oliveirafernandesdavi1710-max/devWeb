@@ -2,25 +2,25 @@ html {
   font-size: clamp(1rem, calc(0.5rem + 2vw), 4rem);
 }
 
-header{
+header {
   text-align: center;
   padding: 5vw 0 0 0;
 }
 
-header nav ul li{
+header nav ul li {
   margin: 20px 0 0 0;
 }
-header nav ul li a.btn{
-  color: #FBBC05;
+header nav ul li a.btn {
+  color: #fbbc05;
 }
-header nav ul li a.btn-border{
-  background-color: #FBBC05;
-  color:  white;
+header nav ul li a.btn-border {
+  background-color: #fbbc05;
+  color: white;
   padding: 8px 16px;
   border-radius: 5px;
   display: inline-block;
 }
-section.banner{
+section.banner {
   background: url(../img/background-banner.png) no-repeat;
   background-size: 100% auto;
   padding: 3vw 5vw;
@@ -52,6 +52,41 @@ section.banner ul {
 section.banner p.buttons img {
   height: 50%;
 }
+section.ready div.img {
+  display: none;
+}
+section.ready {
+  text-align: center;
+  padding: 3vw 5vw;
+}
+section.ready h2{
+  font-size:1.7rem;
+  font-weight: 700;
+  padding: 10px 0;
+}
+section.ready div.lista ul li{
+ margin: 20px 0;
+}
+section.ready div.lista ul li h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+section.ready p {
+  color: gray;
+  font-size: 0.7rem;
+}
+section.dowload {
+  background: #FBBC05;
+  color: white;
+  border-radius: 10px;
+  margin: 3vw 5vw;
+  padding: 2vw;
+}
+section.dowload h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+}
 
 @media only screen and (min-width: 600px) {
   header nav {
@@ -73,5 +108,41 @@ section.banner p.buttons img {
   }
   section.banner div.img {
     display: block;
+  }
+  section.ready div.img {
+    display: block;
+  }
+  section.ready > p {
+    padding: 0 20%;
+  }
+  section.ready > div {
+    padding: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+  }
+  section.ready div.lista ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 40vw;
+  }
+  section.ready div.lista ul li { 
+    text-align: left;
+    width: 40%;
+  }
+  section.ready div.lista ul li p {
+    color: rgb(168, 168, 168);
+  }
+  section.ready div.lista ul li h3 {
+    padding: 1vw 0;
+    font-size: 1rem;
+  }
+  section.dowload {
+    padding: 3vw;
+  }
+  section.dowload p {
+    width: 50%;
   }
 }
