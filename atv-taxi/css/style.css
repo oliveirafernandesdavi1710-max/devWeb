@@ -20,6 +20,12 @@ header nav ul li a.btn-border {
   border-radius: 5px;
   display: inline-block;
 }
+button {
+  background-color: #252B42;
+  border-radius: 10px;
+  padding: 2vw;
+  margin: 4vw 0 2vw 0;
+}
 section.banner {
   background: url(../img/background-banner.png) no-repeat;
   background-size: 100% auto;
@@ -78,16 +84,40 @@ section.ready p {
 section.dowload {
   background: #FBBC05;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 3vw 5vw;
-  padding: 2vw;
+  padding: 3vw;
 }
 section.dowload h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 0 0 20px 0;
 }
-
+section.dowload p {
+  width: 50%;
+  font-size: 1rem;
+  padding: 0 0 2vw;
+}
+.services {
+  margin: 5rem 5vw;
+}
+.services h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.services div.text {
+  margin: 0 0 20px 0;
+}
+.services ul li {
+  background-color: #f6f6f6;
+  margin: 1vw 0;
+  padding: 3vw;
+}
+.services ul li h3{
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 5vw 0 3vw;
+}
 @media only screen and (min-width: 600px) {
   header nav {
     display: flex;
@@ -141,8 +171,33 @@ section.dowload h2 {
   }
   section.dowload {
     padding: 3vw;
+    background: url(../img/iphone-pet-ui.png) no-repeat, url(../img/iphone-pet-ui.png) no-repeat, linear-gradient(#FBBC05,#FBBC05) ;
+    background-size: auto 65%, auto 65%;
+    background-position: 60% 130%, 90% -8vw;
+  }
+  section.dowload h2 {
+    padding: 5vw 0 2vw 0;
   }
   section.dowload p {
-    width: 50%;
+    width: 40%;
+    font-size: 0.7rem;
+  }
+  .services {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /*align-items: ;*/
+  }
+  .services div ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .services div ul li:hover {
+    background-color: #FBBC05;
+    transition: 1s;
+  }
+  .services div ul li p{
+    font-size: 0.7rem;
   }
 }
